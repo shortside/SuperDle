@@ -86,7 +86,7 @@ function startNewGame() {
 
 function clearGameUI() {
   const imageContainer = document.getElementById("image-container");
-  imageContainer.innerHTML = '<div class="image-badge">🛒 Today\'s Product</div>';
+  imageContainer.innerHTML = '<div class="image-badge">🛒 Guess the Price!</div>';
   
   for (let i = 1; i <= 6; i++) {
     const c = document.getElementById(i.toString());
@@ -133,7 +133,7 @@ function convertToShareButton() {
 function displayProductCard() {
   const imageContainer = document.getElementById("image-container");
   if (!imageContainer.querySelector('.image-badge')) {
-    imageContainer.innerHTML = '<div class="image-badge">🛒 Today\'s Product</div>' + imageContainer.innerHTML;
+    imageContainer.innerHTML = '<div class="image-badge">🛒 Guess the Price!</div>' + imageContainer.innerHTML;
   }
   
   const img = document.createElement("img");
