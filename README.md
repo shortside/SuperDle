@@ -1,5 +1,7 @@
 # 🛒 SuperDle
 
+![Plays](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fshortside.github.io%2FSuperDle&count_bg=%23FF6B00&title_bg=%23555555&icon=&title=plays&edge_flat=false)
+
 A Dutch supermarket price guessing game inspired by [Wordle](https://www.nytimes.com/games/wordle) and [Costcodle](https://costcodle.com).
 
 ## 🎮 How to Play
@@ -30,10 +32,6 @@ A Dutch supermarket price guessing game inspired by [Wordle](https://www.nytimes
 ## 🔗 Play Now
 
 **[https://shortside.github.io/SuperDle/](https://shortside.github.io/SuperDle/)**
-
-## 📸 Screenshot
-
-![SuperDle Game](https://raw.githubusercontent.com/shortside/SuperDle/main/assets/screenshot.png)
 
 ## 🛠️ Built With
 
