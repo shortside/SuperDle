@@ -1,0 +1,269 @@
+/* 
+  Overlay styles for Info and Stats panels
+*/
+
+.overlay {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px;
+  background: var(--bg-primary);
+  overflow-y: auto;
+}
+
+.overlay-body {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+}
+
+/* Info Overlay Styles */
+#info-body {
+  font-size: 0.95rem;
+}
+
+.info-section {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-section:last-child {
+  border-bottom: none;
+}
+
+.info-section h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-section ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.info-section li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.info-section li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--dutch-orange);
+  font-weight: 600;
+}
+
+.info-section li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.hero-icon {
+  font-size: 3.5rem;
+  margin-bottom: 12px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.hero-section h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+/* Example guesses in info */
+.example-guesses {
+  margin-top: 8px;
+}
+
+.example-guesses .guess-container {
+  background: transparent;
+}
+
+.example-text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+/* Dutch facts section */
+.dutch-facts {
+  background: linear-gradient(135deg, var(--dutch-orange-glow) 0%, rgba(33, 70, 139, 0.05) 100%);
+  border-radius: var(--border-radius);
+  padding: 20px !important;
+  margin: 16px 0;
+  border: 1px solid rgba(255, 107, 0, 0.2) !important;
+}
+
+.dutch-facts h3 {
+  color: var(--dutch-orange-dark);
+}
+
+.dutch-facts p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Credits section */
+.credits {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.credits a {
+  font-weight: 500;
+}
+
+.tagline {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* Stats Overlay Styles */
+#stat-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stats-header {
+  margin-bottom: 24px;
+}
+
+.stats-icon {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+#statistics-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+#statistics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 32px;
+  padding: 16px;
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 4px;
+}
+
+.stat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dutch-orange);
+  line-height: 1;
+}
+
+.descriptor {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+}
+
+/* Distribution Graph */
+.distribution-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.graph-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 28px;
+}
+
+.graph-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  font-weight: 600;
+  width: 16px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.graphElem {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 24px;
+  padding: 4px 10px;
+  color: white;
+  background: linear-gradient(135deg, var(--dutch-blue) 0%, #1a3a70 100%);
+  border-radius: 6px;
+  transition: width 0.5s ease;
+}
+
+/* Highlighted row for current guess count */
+.graph-row.highlight .graphElem {
+  background: linear-gradient(135deg, var(--dutch-orange) 0%, var(--dutch-orange-dark) 100%);
+}
